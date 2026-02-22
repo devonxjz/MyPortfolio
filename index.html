@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THÁI.DEV — Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Tran Le Thai - 2nd year IT student at Ho Chi Minh City University of Technology and Education. Full-Stack Developer, Cybersecurity Enthusiast & AI Integration.">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Three.js (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-trail"></div>
+
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- CRT Overlay Effects -->
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+
+    <nav>
+        <a href="#hero" class="nav-logo">Devonxjz</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-dot">AVAILABLE</div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">&#10005;</button>
+        <a href="#about" class="mob-link">About</a>
+        <a href="#skills" class="mob-link">Skills</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#experience" class="mob-link">Experience</a>
+        <a href="#contact" class="mob-link">Contact</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- MAIN CONTENT                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <main>
+
+        <!-- ── HERO ── -->
+        <section id="hero">
+            <div class="hero-inner">
+                <p class="hero-pre">// INIT_SEQUENCE — STUDENT &amp; DEVELOPER</p>
+                <h1 class="hero-name">
+                    <span class="glitch" data-text="TRAN LE THAI">TRAN LE THAI</span>
+                </h1>
+                <p class="hero-role">
+                    <span id="typing"></span>
+                    <span class="typing-cursor"></span>
+                </p>
+                <div class="hero-tags">
+                    <span class="tag">Full-Stack</span>
+                    <span class="tag">AI Integration</span>
+                    <span class="tag">Cybersecurity</span>
+                    <span class="tag">Pentesting</span>
+                    <span class="tag">UTE · Year 2</span>
+                </div>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">VIEW PROJECTS</a>
+                    <a href="#contact" class="btn-secondary">GET IN TOUCH</a>
+                </div>
+                <div class="terminal-text">
+                    <span class="prompt">devonxjz@ute:~$</span> status --current<br>
+                    <span style="color:var(--cyan)">→ Building the future, one commit at a time.</span>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ── ABOUT ── -->
+        <section id="about">
+            <div class="section-header reveal">
+                <span class="section-tag">// 01 — WHO AM I</span>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-avatar-wrap reveal">
+                    <div class="about-avatar">
+                        <div class="avatar-hex">
+                            <div class="avatar-initials">Devonxjz</div>
+                        </div>
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-ring-2"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="stat-num" data-count="2">0</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num" data-count="1">0</span>
+                            <span class="stat-label">Projects Done</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num" data-count="5">0</span>
+                            <span class="stat-label">Tech Stacks</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num" data-count="100">0</span>
+                            <span class="stat-label">% Motivated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>// SYSTEM PROFILE</h3>
+                    <p>Hi there! I'm Tran Le Thai, a 2nd-year Information Technology student at
+                        Ho Chi Minh City University of Technology and Education (UTE).</p>
+                    <p>I'm passionate about building modern web applications, integrating AI into real-world products,
+                        and diving deep into cybersecurity. I'm currently studying at CyberJutsu Academy
+                        to sharpen my penetration testing and security research skills.</p>
+                    <p>My strengths lie in Full-stack Development, AI Integration, and Cybersecurity.
+                        I have a solid understanding of the OWASP Top 10 vulnerabilities,
+                        hands-on pentesting experience, and I can comfortably read and comprehend
+                        English technical documentation.</p>
+                    <div class="about-info">
+                        <div class="info-row">
+                            <span class="info-label">STATUS</span>
+                            <span class="info-val" style="color:var(--green)">● Student · Year 2</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">SCHOOL</span>
+                            <span class="info-val">UTE · Ho Chi Minh City</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">LANG</span>
+                            <span class="info-val">Vietnamese (native) · English (reading & communication)</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">EMAIL</span>
+                            <span class="info-val"><a
+                                    href="mailto:tranlethai11102006@gmail.com">tranlethai11102006@gmail.com</a></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">GITHUB</span>
+                            <span class="info-val"><a href="https://github.com/devonxjz"
+                                    target="_blank">github.com/devonxjz</a></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">LOCATION</span>
+                            <span class="info-val">Ho Chi Minh City, Vietnam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SKILLS ── -->
+        <section id="skills">
+            <div class="section-header reveal">
+                <span class="section-tag">// 02 — CAPABILITIES</span>
+                <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">&#9889;</div>
+                    <div class="skill-card-title">// FRONTEND</div>
+                    <div class="skill-items">
+                        <span class="skill-chip">React</span>
+                        <span class="skill-chip">Vite</span>
+                        <span class="skill-chip">Tailwind CSS</span>
+                        <span class="skill-chip">Redux Toolkit</span>
+                        <span class="skill-chip">React Router</span>
+                        <span class="skill-chip">HTML5</span>
+                        <span class="skill-chip">CSS3</span>
+                        <span class="skill-chip">JavaScript</span>
+                    </div>
+                    <div class="skill-bar-group">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">React / Vite</span>
+                                <span class="skill-bar-pct">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">Tailwind CSS</span>
+                                <span class="skill-bar-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">&#128295;</div>
+                    <div class="skill-card-title">// BACKEND</div>
+                    <div class="skill-items">
+                        <span class="skill-chip">Node.js</span>
+                        <span class="skill-chip">Express.js</span>
+                        <span class="skill-chip">MongoDB</span>
+                        <span class="skill-chip">Mongoose</span>
+                        <span class="skill-chip">JWT Auth</span>
+                        <span class="skill-chip">Passport.js</span>
+                        <span class="skill-chip">REST API</span>
+                        <span class="skill-chip">Multer</span>
+                    </div>
+                    <div class="skill-bar-group">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">Node.js / Express</span>
+                                <span class="skill-bar-pct">70%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">MongoDB</span>
+                                <span class="skill-bar-pct">65%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity & Pentesting -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">&#128274;</div>
+                    <div class="skill-card-title">// CYBERSECURITY</div>
+                    <div class="skill-items">
+                        <span class="skill-chip">OWASP Top 10</span>
+                        <span class="skill-chip">Burp Suite</span>
+                        <span class="skill-chip">Nmap</span>
+                        <span class="skill-chip">Wireshark</span>
+                        <span class="skill-chip">OWASP ZAP</span>
+                        <span class="skill-chip">SQLmap</span>
+                        <span class="skill-chip">Metasploit</span>
+                        <span class="skill-chip">John the Ripper</span>
+                        <span class="skill-chip">Aircrack-ng</span>
+                        <span class="skill-chip">SpiderFoot</span>
+                        <span class="skill-chip">Webhook</span>
+                        <span class="skill-chip">CyberJutsu</span>
+                    </div>
+                    <div class="skill-bar-group">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">Penetration Testing</span>
+                                <span class="skill-bar-pct">60%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">Web Security (OWASP)</span>
+                                <span class="skill-bar-pct">55%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="55"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Services -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">&#129302;</div>
+                    <div class="skill-card-title">// AI &amp; SERVICES</div>
+                    <div class="skill-items">
+                        <span class="skill-chip">Google Gemini AI</span>
+                        <span class="skill-chip">Cloudinary</span>
+                        <span class="skill-chip">Nodemailer</span>
+                        <span class="skill-chip">VNPay</span>
+                        <span class="skill-chip">MoMo API</span>
+                        <span class="skill-chip">ClamAV</span>
+                        <span class="skill-chip">OAuth2</span>
+                        <span class="skill-chip">SendGrid</span>
+                    </div>
+                    <div class="skill-bar-group">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">AI Integration</span>
+                                <span class="skill-bar-pct">68%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="68"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">API Design</span>
+                                <span class="skill-bar-pct">72%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Workflow -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">&#128450;</div>
+                    <div class="skill-card-title">// TOOLS &amp; WORKFLOW</div>
+                    <div class="skill-items">
+                        <span class="skill-chip">Git / GitHub</span>
+                        <span class="skill-chip">VS Code</span>
+                        <span class="skill-chip">Postman</span>
+                        <span class="skill-chip">npm</span>
+                        <span class="skill-chip">Linux</span>
+                        <span class="skill-chip">Agile</span>
+                        <span class="skill-chip">Project Mgmt</span>
+                        <span class="skill-chip">Research</span>
+                    </div>
+                    <div class="skill-bar-group">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">Git / GitHub</span>
+                                <span class="skill-bar-pct">78%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-top">
+                                <span class="skill-bar-name">Problem Solving</span>
+                                <span class="skill-bar-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── PROJECTS ── -->
+        <section id="projects">
+            <div class="section-header reveal">
+                <span class="section-tag">// 03 — FEATURED WORK</span>
+                <h2 class="section-title">My <span class="accent">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <span class="project-num">01</span>
+                        <span class="project-status">● COMPLETED</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">CV-AGENT</h3>
+                        <p class="project-desc">
+                            An intelligent CV analysis and optimization platform powered by Google Gemini AI.
+                            Features include ClamAV virus scanning, OAuth login (Google/Facebook),
+                            VNPay/MoMo payment integration, and full analysis history management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Gemini AI</span>
+                            <span class="tech-badge">Cloudinary</span>
+                            <span class="tech-badge">VNPay</span>
+                            <span class="tech-badge">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/devonxjz" class="project-link" target="_blank">→ GitHub</a>
+                            <a href="https://cv-agent-neon.vercel.app" class="project-link" target="_blank">→ Live
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <span class="project-num">02</span>
+                        <span class="project-status" style="border-color:var(--yellow);color:var(--yellow)">● IN
+                            PROGRESS</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">NEXT PROJECT</h3>
+                        <p class="project-desc">
+                            Currently in the research and development phase. Focused on applying AI
+                            and modern technologies to solve real-world problems. Stay tuned!
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">TBD</span>
+                            <span class="tech-badge">AI</span>
+                            <span class="tech-badge">Full-Stack</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/devonxjz" class="project-link" target="_blank">→ GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── EXPERIENCE ── -->
+        <section id="experience">
+            <div class="section-header reveal">
+                <span class="section-tag">// 04 — JOURNEY</span>
+                <h2 class="section-title">My <span class="accent">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 — PRESENT</div>
+                    <div class="timeline-title">Computer Science Student</div>
+                    <div class="timeline-org">// UTE — Ho Chi Minh City University of Technology and Education</div>
+                    <p class="timeline-desc">
+                        Currently in my 2nd year of Information Technology.
+                        Studying core subjects including Programming, Databases,
+                        Computer Networks, and modern Software Development.
+                        Actively self-learning web technologies, AI, and cybersecurity outside the curriculum.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="tl-tag">Full-Stack</span>
+                        <span class="tl-tag">AI Research</span>
+                        <span class="tl-tag">Self-Learning</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot" style="background:var(--magenta);box-shadow:0 0 15px var(--magenta)">
+                    </div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-title">Project Lead — CV-Agent</div>
+                    <div class="timeline-org">// Personal Project · Full-Stack Development</div>
+                    <p class="timeline-desc">
+                        Architected and developed the entire CV-Agent system from scratch.
+                        Integrated Google Gemini AI, built OAuth authentication,
+                        payment gateways (VNPay/MoMo), and ClamAV security scanning.
+                        Managed project planning, technical design, and deployment.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="tl-tag">Node.js</span>
+                        <span class="tl-tag">React</span>
+                        <span class="tl-tag">MongoDB</span>
+                        <span class="tl-tag">Gemini AI</span>
+                        <span class="tl-tag">System Design</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot" style="background:var(--yellow);box-shadow:0 0 15px var(--yellow)"></div>
+                    <div class="timeline-date">2024 — PRESENT</div>
+                    <div class="timeline-title">Cybersecurity Learner — CyberJutsu</div>
+                    <div class="timeline-org">// CyberJutsu Academy · Penetration Testing</div>
+                    <p class="timeline-desc">
+                        Studying cybersecurity and penetration testing at CyberJutsu Academy.
+                        Gaining hands-on experience with OWASP Top 10 vulnerabilities,
+                        network/web pentesting tools (Burp Suite, Nmap, Metasploit, SQLmap),
+                        and security research methodologies.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="tl-tag">Pentesting</span>
+                        <span class="tl-tag">OWASP</span>
+                        <span class="tl-tag">Burp Suite</span>
+                        <span class="tl-tag">Security Research</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot" style="background:var(--green);box-shadow:0 0 15px var(--green)"></div>
+                    <div class="timeline-date">2024 — PRESENT</div>
+                    <div class="timeline-title">Independent Researcher</div>
+                    <div class="timeline-org">// Self-directed · AI &amp; Security</div>
+                    <p class="timeline-desc">
+                        Researching and experimenting with AI applications (LLM, Generative AI) in software development.
+                        Exploring system design patterns, web application security, and OSINT techniques.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="tl-tag">AI/ML</span>
+                        <span class="tl-tag">Security</span>
+                        <span class="tl-tag">System Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CONTACT ── -->
+        <section id="contact">
+            <div class="section-header reveal">
+                <span class="section-tag">// 05 — PING ME</span>
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <div class="section-line" style="margin:1rem auto 0"></div>
+            </div>
+            <div class="contact-box reveal">
+                <p class="contact-subtitle">
+                    Currently looking for internship opportunities in backend development and cybersecurity!
+                    If you have something interesting, feel free to reach out.
+                </p>
+                <a href="mailto:tranlethai11102006@gmail.com" class="contact-email">
+                    tranlethai11102006@gmail.com
+                </a>
+                <div class="social-links">
+                    <a href="https://github.com/devonxjz" target="_blank" class="social-link">&#10216; GitHub
+                        &#10217;</a>
+                    <a href="mailto:tranlethai11102006@gmail.com" class="social-link">&#10216; Email &#10217;</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer>
+        <p>DESIGNED &amp; BUILT BY <span>TRAN LE THAI</span> · <span>devonxjz</span> · &copy; 2025</p>
+        <p style="margin-top:0.5rem;font-size:0.55rem;opacity:0.5;">UTE · HO CHI MINH CITY · VIETNAM</p>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- SCRIPTS (loaded in dependency order)        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <script src="js/scene.js" defer></script>
+    <script src="js/cursor.js" defer></script>
+    <script src="js/typing.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+</body>
+
+</html>
