@@ -1,10 +1,13 @@
 <div align="center">
 
-<!-- HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00fff5,50:ff006e,100:ffbe0b&height=220&section=header&text=Devonxjz&fontSize=80&fontColor=ffffff&fontAlignY=35&desc=Tran%20Le%20Thai%20%7C%20Full-Stack%20Developer%20%26%20Cybersecurity%20Enthusiast&descSize=18&descAlignY=55&animation=fadeIn" width="100%"/>
+# 👾 DEVONXJZ
+
+### Backend Developer · Cybersecurity Enthusiast
+
+<br/>
 
 <!-- TYPING SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FFF5&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Full-Stack+Developer+%F0%9F%92%BB;Cybersecurity+Enthusiast+%F0%9F%94%90;AI+Integration+Explorer+%F0%9F%A4%96;Penetration+Tester+in+Training+%F0%9F%8E%AF)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FFF5&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Backend+Developer+%F0%9F%92%BB;Cybersecurity+Enthusiast+%F0%9F%94%90;Penetration+Tester+in+Training+%F0%9F%8E%AF)](https://git.io/typing-svg)
 
 <!-- PROFILE VIEWS & SOCIAL BADGES -->
 <p>
@@ -150,21 +153,7 @@ looking_for: Internship in Backend Development & Cybersecurity
 
 ---
 
-## 🐍 Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devonxjz/devonxjz/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/devonxjz/devonxjz/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/devonxjz/devonxjz/output/github-snake-dark.svg" />
-</picture>
-
-</div>
-
----
-
-## 📫 Connect With Me
+##  Connect With Me
 
 <div align="center">
 
@@ -178,8 +167,8 @@ looking_for: Internship in Backend Development & Cybersecurity
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00fff5,50:ff006e,100:ffbe0b&height=120&section=footer" width="100%"/>
+---
 
-<sub>⚡ Built with passion by <strong>devonxjz</strong> — UTE, Ho Chi Minh City, Vietnam</sub>
+<sub>⚡ Built with passion by <strong>devonxjz</strong> — UTE, Ho Chi Minh City, Vietnam 🇻🇳</sub>
 
 </div>
